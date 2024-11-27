@@ -8,24 +8,7 @@ export const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Your Name - Portfolio</title> */}
         
-        <header className="bg-white shadow-md">
-          <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" className="text-xl font-bold text-gray-800">
-              Rupinder kaur
-            </a>
-            <div className="hidden md:flex space-x-4">
-              <a href="#about" className="text-red-600 hover:text-gray-800">
-                About
-              </a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-800">
-                Projects
-              </a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-800">
-                Contact
-              </a>
-            </div>
-          </nav>
-        </header>
+        
         {/* Hero Section */}
         <section className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-6 text-center">

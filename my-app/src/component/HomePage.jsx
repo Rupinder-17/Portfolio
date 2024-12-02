@@ -7,6 +7,8 @@ import {
   MapPinIcon,
   CalendarIcon,
 } from "lucide-react";
+import { Header } from "./Header";
+import MDEditor from "@uiw/react-md-editor";
 
 const skills = [
   "React",
@@ -16,11 +18,23 @@ const skills = [
   "TypeScript",
   "Node.js",
 ];
+const code = `\`\`\`js
+const rupinderKaurDetails = [
+  {
+    name: "Rupinder Kaur",
+    profession: "Developer",
+    interests: ["Innovative software solutions", "Efficient coding"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "GitHub"]
+  }
+];
+\`\`\`
+`;
 
 export default function PortfolioSection() {
   return (
     <section className="bg-white py-20 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <Header />
+      <div className="max-w-7xl mt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* Text Section */}
         <div>
           <h1 className="text-4xl font-bold text-gray-800 sm:text-5xl mb-4">
@@ -110,9 +124,10 @@ export default function PortfolioSection() {
         {/* Image Section */}
         <div className="relative">
           <div className="w-full h-80 lg:h-[24rem] bg-gradient-to-br from-purple-300 via-indigo-300 to-blue-300 rounded-lg shadow-lg overflow-hidden flex items-center justify-center">
-            <p className="text-white text-xl font-semibold">
-              Placeholder for Image
-            </p>
+            <MDEditor.Markdown
+              source={code}
+              style={{ whiteSpace: "pre-wrap" }}
+            />
           </div>
         </div>
       </div>

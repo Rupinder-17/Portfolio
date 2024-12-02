@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Header } from "./Header";
 import MDEditor from "@uiw/react-md-editor";
+import { Marq } from "./Skills";
 
 const skills = [
   "React",
@@ -131,6 +132,7 @@ export default function PortfolioSection() {
           </div>
         </div>
       </div>
+      <Marq/>
     </section>
   );
 }

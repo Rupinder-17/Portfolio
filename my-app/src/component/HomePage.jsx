@@ -9,16 +9,19 @@ import {
 } from "lucide-react";
 import { Header } from "./Header";
 import MDEditor from "@uiw/react-md-editor";
-import { Marq } from "./Skills";
+// import {  MarqueeVertical } from "./Skills";
+import Marquee from "@/components/ui/marquee";
+import { HorizontalMarqueeDemo } from "./Skills";
 
-const skills = [
-  "React",
-  "Next.js",
-  "Tailwind",
-  "Laravel",
-  "TypeScript",
-  "Node.js",
-];
+
+// const skills = [
+//   "React",
+//   "Next.js",
+//   "Tailwind",
+//   "Laravel",
+//   "TypeScript",
+//   "Node.js",
+// ];
 const code = `\`\`\`js
 const rupinderKaurDetails = [
   {
@@ -57,14 +60,14 @@ export default function PortfolioSection() {
           <div className="mb-8">
             <h3 className="text-lg font-semibold text-gray-800 mb-4">Skills</h3>
             <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
+              {/* {skills.map((skill) => (
                 <span
                   key={skill}
                   className="bg-cyan-100 text-cyan-800 text-sm font-medium px-3 py-1.5 rounded-full shadow-sm"
                 >
                   {skill}
                 </span>
-              ))}
+              ))} */}
             </div>
           </div>
 
@@ -132,7 +135,8 @@ export default function PortfolioSection() {
           </div>
         </div>
       </div>
-      <Marq/>
+      {/* <MarqueeVertical/> */}
+      <HorizontalMarqueeDemo/>
     </section>
   );
 }

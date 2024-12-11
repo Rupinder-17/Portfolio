@@ -1,85 +1,75 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-// import Marquee from "@/components/magicui/marquee";
 import Marquee from "@/components/ui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    // username: "@jack",
-    // body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    skill: "HTML",
+    description: "Expert in creating structured and semantic web page layouts.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
   },
   {
-    name: "Jill",
-    // username: "@jill",
-    // body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    skill: "CSS",
+    description:
+      "Skilled in designing responsive and visually appealing user interfaces.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    skill: "JavaScript",
+    description:
+      "Proficient in adding interactivity and functionality to web applications.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    skill: "React",
+    description:
+      "Experienced in building dynamic and reusable components for efficient front-end development.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    skill: "GitHub",
+    description:
+      "Adept at version control and collaborative coding using Git and GitHub.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
   },
 ];
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ skill, description, logo }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "relative w-64 p-6 overflow-hidden rounded-xl shadow-xl border",
+        "bg-gradient-to-b from-indigo-100 to-white dark:from-gray-800 dark:to-gray-900",
+        "hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex flex-col items-center text-center">
         <img
-          className="rounded-full"
-          width="32"
-          height="32"
-          alt={name}
-          src={img}
+          className="w-20 h-20 mb-4 rounded-full border-4 border-indigo-300"
+          alt={skill}
+          src={logo}
         />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
+        <figcaption className="text-xl font-bold text-gray-900 dark:text-gray-100">
+          {skill}
+        </figcaption>
+        <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+          {description}
+        </p>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
   );
 };
 
 export function HorizontalMarqueeDemo() {
   return (
-    <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+    <div className="relative w-full flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6">
       {/* First Horizontal Marquee */}
-      <Marquee pauseOnHover className="[--duration:20s] flex flex-row gap-4">
+      <Marquee
+        pauseOnHover
+        className="[--duration:40s] flex flex-row gap-4 mb-6"
+      >
         {reviews.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+          <ReviewCard key={review.skill} {...review} />
         ))}
       </Marquee>
 
@@ -90,13 +80,13 @@ export function HorizontalMarqueeDemo() {
         className="[--duration:20s] flex flex-row gap-4"
       >
         {reviews.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+          <ReviewCard key={review.skill} {...review} />
         ))}
       </Marquee>
 
       {/* Horizontal Gradient Effects */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-gray-50 via-transparent to-transparent dark:from-gray-900"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-gray-50 via-transparent to-transparent dark:from-gray-900"></div>
     </div>
   );
 }

@@ -58,7 +58,7 @@ export default function PortfolioSection() {
 
           {/* Skills Section */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">Skills</h3>
+            {/* <h3 className="text-lg font-semibold text-gray-800 mb-4">Skills</h3> */}
             <div className="flex flex-wrap gap-3">
               {/* {skills.map((skill) => (
                 <span
@@ -127,16 +127,13 @@ export default function PortfolioSection() {
 
         {/* Image Section */}
         <div className="relative">
-          <div className="w-full h-80 lg:h-[24rem] bg-gradient-to-br from-purple-300 via-indigo-300 to-blue-300 rounded-lg shadow-lg overflow-hidden flex items-center justify-center">
-            <MDEditor.Markdown
-              source={code}
-              style={{ whiteSpace: "pre-wrap" }}
-            />
-          </div>
+          <h1 className="text-center mb-5">SKILLS</h1>
+          <HorizontalMarqueeDemo />
         </div>
       </div>
-      {/* <MarqueeVertical/> */}
-      <HorizontalMarqueeDemo/>
+      {/* <div className="w-full h-80 lg:h-[24rem] bg-gradient-to-br from-purple-300 via-indigo-300 to-blue-300 rounded-lg shadow-lg overflow-hidden flex items-center justify-center"> */}
+        {/* <MDEditor.Markdown source={code} style={{ whiteSpace: "pre-wrap" }} /> */}
+      {/* </div> */}
     </section>
   );
 }

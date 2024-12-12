@@ -7,7 +7,7 @@ const rupinderKaurDetails = [
     name: "Rupinder Kaur",
     profession: "Developer",
     interests: ["Innovative software solutions", "Efficient coding"],
-    skills: ["HTML", "CSS", "JavaScript", "React", "GitHub"]
+    skills: ["HTML", "CSS", "JavaScript", "React js", "GitHub"]
   }
 ];
 \`\`\`
@@ -16,7 +16,10 @@ const rupinderKaurDetails = [
 export const About = () => {
   return (
     <div>
-      <h3 className='text-4xl text-center'>About</h3>
+      <div className='bg-gray-200  rounded-2xl w-28 px-3 py-1  m-auto'>
+
+      <h3 className='text-2xl font-semibold  text-center'>About</h3>
+      </div>
       <div className="flex w-full p-5">
         <div className="bg-gradient-to-br w-[50%]  from-purple-400 to-blue-400 rounded-lg shadow-md p-6">
           <MDEditor.Markdown source={code} className="whitespace-pre-wrap" />

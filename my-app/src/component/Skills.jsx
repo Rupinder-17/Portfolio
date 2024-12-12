@@ -21,7 +21,7 @@ const reviews = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
-    skill: "React",
+    skill: "React js",
     description:
       "Experienced in building dynamic and reusable components for efficient front-end development.",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
@@ -38,21 +38,21 @@ const ReviewCard = ({ skill, description, logo }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 p-6 overflow-hidden rounded-xl shadow-xl border",
+        "relative w-64 h-40 p-3 overflow-hidden rounded-xl shadow-xl border",
         "bg-gradient-to-b from-indigo-100 to-white dark:from-gray-800 dark:to-gray-900",
         "hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
       )}
     >
       <div className="flex flex-col items-center text-center">
         <img
-          className="w-20 h-20 mb-4 rounded-full border-4 border-indigo-300"
+          className="w-10 h-10 mb-2 rounded-full border-4 border-indigo-300"
           alt={skill}
           src={logo}
         />
         <figcaption className="text-xl font-bold text-gray-900 dark:text-gray-100">
           {skill}
         </figcaption>
-        <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+        <p className="mt-1 text-sm text-gray-700 dark:text-gray-300">
           {description}
         </p>
       </div>

@@ -28,7 +28,7 @@ const rupinderKaurDetails = [
     name: "Rupinder Kaur",
     profession: "Developer",
     interests: ["Innovative software solutions", "Efficient coding"],
-    skills: ["HTML", "CSS", "JavaScript", "React", "GitHub"]
+    skills: ["HTML", "CSS", "JavaScript", "React", "GitHub , Tailwind css"]
   }
 ];
 \`\`\`

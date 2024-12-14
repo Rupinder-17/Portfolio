@@ -15,6 +15,18 @@ const reviews = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
   },
   {
+    skill: "Laravel",
+    description:
+      "Proficient in building robust and scalable back-end systems using Laravel framework.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+  },
+  {
+    skill: "TypeScript",
+    description:
+      "Experienced in enhancing JavaScript with strong typing and improved tooling for scalable applications.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+  },
+  {
     skill: "JavaScript",
     description:
       "Proficient in adding interactivity and functionality to web applications.",
@@ -31,6 +43,12 @@ const reviews = [
     description:
       "Adept at version control and collaborative coding using Git and GitHub.",
     logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+  },
+  {
+    skill: "Tailwind CSS",
+    description:
+      "Experienced in using utility-first CSS framework for rapidly building custom designs.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
   },
 ];
 

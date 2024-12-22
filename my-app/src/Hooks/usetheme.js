@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { MyTheme } from './ContextHook'
 
 export const Usetheme = () => {

@@ -5,13 +5,14 @@ import "./index.css";
 import PortfolioSection from "./component/HomePage";
 import { About } from "./component/About";
 import { ContextHookProvider } from "./Hooks/ContextHook";
+import { Project } from "./component/Project";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ContextHookProvider>
-      {/* <Headers/> */}
       <PortfolioSection />
-      <About />
+      {/* <About /> */}
+      <Project/>
     </ContextHookProvider>
   </StrictMode>
 );

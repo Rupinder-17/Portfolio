@@ -56,7 +56,7 @@ const ReviewCard = ({ skill, description, logo }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 h-40 p-3 overflow-hidden rounded-xl shadow-xl border",
+        "relative w-64  h-40 p-3 overflow-hidden rounded-xl shadow-xl border",
         "bg-gradient-to-b from-indigo-100 to-white dark:from-gray-800 dark:to-gray-900",
         "hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
       )}
@@ -80,7 +80,7 @@ const ReviewCard = ({ skill, description, logo }) => {
 
 export function HorizontalMarqueeDemo() {
   return (
-    <div className="relative w-full flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6">
+    <div className="relative w-[100%] flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6">
       {/* First Horizontal Marquee */}
       <Marquee
         pauseOnHover

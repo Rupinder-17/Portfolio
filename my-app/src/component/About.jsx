@@ -16,24 +16,20 @@ const rupinderKaurDetails = [
 export const About = () => {
   return (
     <div className="max-w-7xl mx-auto  h-96 py-12">
-      {/* Title Section */}
       <div className="bg-gray-200 rounded-2xl w-36 px-4 py-2 mx-auto">
         <h3 className="text-2xl font-semibold text-center text-gray-800">
           About
         </h3>
       </div>
 
-      {/* Content Section */}
       <div className="flex flex-col lg:flex-row items-start gap-8 mt-10">
-        {/* Code Block */}
-        {/* <div className="bg-gradient-to-br from-purple-200 to-cyan-100 rounded-lg shadow-lg p-6 flex-1">
+        <div className="bg-gradient-to-br from-purple-200 to-cyan-100 rounded-lg shadow-lg p-6 flex-1">
           <MDEditor.Markdown
             source={code}
             className="whitespace-pre-wrap text-sm text-gray-700"
           />
-        </div> */}
+        </div>
 
-        {/* Description Block */}
         <div className="flex-1  bg-gray-50 rounded-lg shadow p-6">
           <p className="text-lg  leading-relaxed text-gray-800 space-y-4">
             I’m Rupinder Kaur, a dedicated full-stack developer with expertise in
@@ -50,13 +46,7 @@ export const About = () => {
             I specialize in building sophisticated web applications that are
             both scalable and user-friendly.
           </p>
-          {/* <p className="text-lg leading-relaxed text-gray-800 space-y-4 mt-4">
-            As a forward-thinker, I thrive in managing projects from concept to
-            completion, focusing on delivering exceptional results that align
-            with client goals. Whether it’s brainstorming creative solutions or
-            implementing cutting-edge technologies, I’m committed to excellence
-            at every stage of development.
-          </p> */}
+          
           <ul className="mt-6 space-y-2 text-center text-gray-700">
             <li>🎓 Bachelor’s Degree in Computer Applications</li>
             <li>🎓 Master{"'"}s Degree in Information tecknology</li>

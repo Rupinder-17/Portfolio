@@ -73,7 +73,11 @@ export default {
   		animation: {
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
-  		}
+  		},
+  		// backgroundImage: {
+  		// 	'grid-pattern': ',
+  		// 	'grid-pattern-light': '
+  		// }
   	}
   },
   plugins: [require("tailwindcss-animate")],

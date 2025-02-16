@@ -2,7 +2,7 @@ import React from "react";
 import riderApp from "../image/riderApp.png";
 import weatherApp from "../image/weather-App.png";
 import QuizApp from "../image/QuizApp.png"
-import { image } from "@uiw/react-md-editor";
+// import { image } from "@uiw/react-md-editor";
 
 export const Project = () => {
   const projects = [
@@ -43,7 +43,6 @@ export const Project = () => {
 
   return (
     <div className="bg-gray-900 text-white py-16 px-6">
-      {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Projects</h1>
         <p className="text-gray-400 text-lg">
@@ -51,14 +50,12 @@ export const Project = () => {
         </p>
       </div>
 
-      {/* Projects Grid */}
       <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
             key={index}
             className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
           >
-            {/* Image */}
             {project.image && (
               <img
                 src={project.image}
@@ -67,12 +64,10 @@ export const Project = () => {
               />
             )}
 
-            {/* Content */}
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
               <p className="text-gray-400 mb-4">{project.description}</p>
 
-              {/* Technologies */}
               {project.technologies && (
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
@@ -86,7 +81,6 @@ export const Project = () => {
                 </div>
               )}
 
-              {/* View Project Link */}
               {project.link && (
                 <a
                   href={project.link}

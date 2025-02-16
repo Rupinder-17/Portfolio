@@ -6,6 +6,7 @@ import PortfolioSection from "./component/HomePage";
 import { About } from "./component/About";
 import { ContextHookProvider } from "./Hooks/ContextHook";
 import { Project } from "./component/Project";
+import { ContactPage } from "./component/Contect";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
       <PortfolioSection />
       {/* <About /> */}
       <Project/>
+      <ContactPage/>
     </ContextHookProvider>
   </StrictMode>
 );

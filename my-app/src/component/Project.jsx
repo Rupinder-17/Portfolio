@@ -42,7 +42,7 @@ export const Project = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white py-16 px-6">
+    <div className="bg-gray-100 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Projects</h1>
         <p className="text-gray-400 text-lg">
@@ -54,7 +54,7 @@ export const Project = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+            className="bg-gray-500  border-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
           >
             {project.image && (
               <img

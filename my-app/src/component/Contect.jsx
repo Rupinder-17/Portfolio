@@ -111,11 +111,7 @@ export const ContactPage = () => {
             </div>
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="font-light text-xl md:text-2xl text-white mb-4">
-              And this, is chemical burn.
-            </p>
-          </div>
+          
         </motion.div>
       </AuroraBackground>
     </div>

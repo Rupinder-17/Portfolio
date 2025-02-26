@@ -44,7 +44,7 @@ export const Project = () => {
   return (
     <div className="bg-gray-100 text-white py-16 px-6">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Projects</h1>
+        <h1 className="text-4xl font-bold mb-4 text-gray-500">Projects</h1>
         <p className="text-gray-400 text-lg">
           Some of the noteworthy projects I have built!
         </p>

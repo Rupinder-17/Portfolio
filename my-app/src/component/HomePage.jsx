@@ -9,8 +9,9 @@ import {
 } from "lucide-react";
 import { Header } from "./Header";
 import MDEditor from "@uiw/react-md-editor";
-import Marquee from "@/components/ui/marquee";
+// import Marquee from "@/components/ui/marquee";
 import { HorizontalMarqueeDemo } from "./Skills";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
 const code = `\`\`\`js
 const rupinderKaurDetails = [
@@ -29,6 +30,18 @@ export default function PortfolioSection() {
     <section className="bg-gray-50 py-20 px-6 sm:px-12 lg:px-24">
       <Header />
       <div className="max-w-7xl mt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="relative h-[500px] rounded-lg w-full bg-background overflow-hidden border">
+          <FlickeringGrid
+            className="z-0 absolute inset-0 size-full"
+            squareSize={4}
+            gridGap={6}
+            color="#6B7280"
+            maxOpacity={0.5}
+            flickerChance={0.1}
+            height={800}
+            width={800}
+          />
+        </div>
         {/* Text Section */}
         <div>
           <h1 className="text-4xl font-extrabold text-gray-800 sm:text-5xl mb-4 leading-tight">

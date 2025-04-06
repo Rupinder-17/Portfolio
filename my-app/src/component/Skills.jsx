@@ -1,5 +1,5 @@
 // import React from "react";
-import { cn } from "@/lib/utils";
+// import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 
 const reviews = [
@@ -52,29 +52,21 @@ const reviews = [
   },
 ];
 
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 const ReviewCard = ({ skill, description, logo }) => {
   return (
-    <figure
-      className={cn(
-        "relative w-64  h-40 p-3 overflow-hidden rounded-xl shadow-xl border",
-        "bg-gradient-to-b from-indigo-100 to-white dark:from-gray-800 dark:to-gray-900",
-        "hover:shadow-2xl hover:scale-105 transform transition-all duration-300"
-      )}
-    >
-      <div className="flex flex-col items-center text-center">
-        <img
-          className="w-10 h-10 mb-2 rounded-full border-4 border-indigo-300"
-          alt={skill}
-          src={logo}
-        />
-        <figcaption className="text-xl font-bold text-gray-900 dark:text-gray-100">
-          {skill}
-        </figcaption>
-        <p className="mt-1 text-sm text-gray-700 dark:text-gray-300">
-          {description}
-        </p>
-      </div>
-    </figure>
+    <Card className="w-64 overflow-hidden bg-card">
+      <CardHeader className="flex flex-row items-center gap-4 p-4">
+        <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-primary/20">
+          <img className="h-full w-full object-cover" alt={skill} src={logo} />
+        </div>
+        <CardTitle className="text-xl">{skill}</CardTitle>
+      </CardHeader>
+      <CardContent className="p-4 pt-0">
+        <p className="text-sm text-muted-foreground">{description}</p>
+      </CardContent>
+    </Card>
   );
 };
 

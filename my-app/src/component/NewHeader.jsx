@@ -1,18 +1,27 @@
-// import * as React from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { Usetheme } from "@/Hooks/usetheme";
 import {
   NavigationMenu,
-//   NavigationMenuContent,
+  //   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-//   NavigationMenuTrigger,
+  //   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { useCallback } from "react";
 
 export const NewHeader = () => {
   const { theme, handleTheme } = Usetheme();
+
+  const handleNavClick = useCallback((e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -23,6 +32,7 @@ export const NewHeader = () => {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 href="#about"
+                onClick={handleNavClick}
               >
                 About
               </NavigationMenuLink>
@@ -31,6 +41,7 @@ export const NewHeader = () => {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 href="#projects"
+                onClick={handleNavClick}
               >
                 Projects
               </NavigationMenuLink>
@@ -39,6 +50,7 @@ export const NewHeader = () => {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 href="#contact"
+                onClick={handleNavClick}
               >
                 Contact
               </NavigationMenuLink>

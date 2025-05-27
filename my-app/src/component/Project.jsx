@@ -56,6 +56,14 @@ export const Project = () => {
       image: "",
       technologies: ["React", "tailwind css", "UI Design"],
     },
+    {
+      title: "Pomodoro App",
+      description:
+        "A productivity app that helps users manage their time with the Pomodoro technique.",
+      link: "", 
+      image: "",
+      technologies: ["React", "tailwind css", "UI Design"],    
+    }
   ];
 
   return (

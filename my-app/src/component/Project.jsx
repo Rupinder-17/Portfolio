@@ -1,9 +1,12 @@
-import React from "react";
+// import React from "react";
 import riderApp from "../image/riderApp.png";
 import weatherApp from "../image/weather-App.png";
 import QuizApp from "../image/QuizApp.png"
-import { image, title } from "@uiw/react-md-editor";
 // import { image } from "@uiw/react-md-editor";
+import chatImage from "../image/chatApp.jpg";
+import socialImage from "../image/insta.jpg";
+// import pomodoroImage from "../image/pomodoroImage.png";
+
 
 export const Project = () => {
   const projects = [
@@ -45,7 +48,7 @@ export const Project = () => {
       description:
         "A real-time chat application that allows users to communicate with each other in real-time.",
       link: "https://free-api-chat.vercel.app/register",
-      image: "",
+      image: chatImage,
       technologies: ["React", "tailwind css", "UI Design"],
     },
     {
@@ -53,7 +56,7 @@ export const Project = () => {
       description:
         "A social media platform where users can connect, share posts, and interact with others.",
       link: "https://social-media-app-ruddy-chi.vercel.app/",
-      image: "",
+      image: socialImage,
       technologies: ["React", "tailwind css", "UI Design"],
     },
     {

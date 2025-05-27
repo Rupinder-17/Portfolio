@@ -2,6 +2,7 @@ import React from "react";
 import riderApp from "../image/riderApp.png";
 import weatherApp from "../image/weather-App.png";
 import QuizApp from "../image/QuizApp.png"
+import { image, title } from "@uiw/react-md-editor";
 // import { image } from "@uiw/react-md-editor";
 
 export const Project = () => {
@@ -38,6 +39,15 @@ export const Project = () => {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s",
       technologies: ["React", "CSS Transitions"],
+    },
+    {
+      title: "chatApp",
+      description:
+        "A real-time chat application that allows users to communicate with each other in real-time.",
+      link: "https://free-api-chat.vercel.app/register",
+      image:"",
+      technologies: ["React", "tailwind css", "UI Design"],
+
     },
   ];
 

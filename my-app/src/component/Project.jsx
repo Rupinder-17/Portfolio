@@ -45,9 +45,16 @@ export const Project = () => {
       description:
         "A real-time chat application that allows users to communicate with each other in real-time.",
       link: "https://free-api-chat.vercel.app/register",
-      image:"",
+      image: "",
       technologies: ["React", "tailwind css", "UI Design"],
-
+    },
+    {
+      title: "Social Media App",
+      description:
+        "A social media platform where users can connect, share posts, and interact with others.",
+      link: "https://social-media-app-ruddy-chi.vercel.app/",
+      image: "",
+      technologies: ["React", "tailwind css", "UI Design"],
     },
   ];
 

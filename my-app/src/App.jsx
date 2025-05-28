@@ -10,13 +10,15 @@ import { ContextProvider } from "./Hooks/ContextHook";
 function App() {
   return (
     <ContextProvider>
-      <NewHeader />
-      <HomePage />
-      <About />
-      <Project />
-      <Skills />
-      <Contect />
-      <Mousemove />
+      <div className="relative" data="test">
+        {/* <NewHeader /> */}
+        {/* <HomePage /> */}
+        {/* <About /> */}
+        {/* <Project /> */}
+        {/* <Skills /> */}
+        {/* <Contect /> */}
+      </div>
+      {/* <Mousemove /> */}
     </ContextProvider>
   );
 }

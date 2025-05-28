@@ -11,6 +11,7 @@ import { Header } from "./Header";
 import MDEditor from "@uiw/react-md-editor";
 import { HorizontalMarqueeDemo } from "./Skills";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { NewHeader } from "./NewHeader";
 
 const code = `\`\`\`js
 const rupinderKaurDetails = [
@@ -25,26 +26,21 @@ const rupinderKaurDetails = [
 
 export default function PortfolioSection() {
   return (
-    <section
-      className="relative bg-gray-50 py-12 px-4 sm:px-8 lg:px-16"
-      id="home"
-    >
-      <Header />
-
-      <div className="absolute">
-        <FlickeringGrid
-          className="size-full"
-          squareSize={4}
-          gridGap={6}
-          color="#6B7280"
-          maxOpacity={0.3}
-          flickerChance={0.1}
-          height={580}
-          width={1500}
-        />
-      </div>
-      <div className="relative mt-8">
-        <div className="max-w-7xl mt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <section className="relative bg-gray-50 pb-12" id="home">
+      <div className="relative pt-8">
+        <div className="absolute">
+          <FlickeringGrid
+            className="size-full"
+            squareSize={4}
+            gridGap={6}
+            color="#6B7280"
+            maxOpacity={0.3}
+            flickerChance={0.1}
+            height={580}
+            width={1500}
+          />
+        </div>
+        <div className="max-w-7xl pt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-4xl font-extrabold text-gray-800 sm:text-5xl mb-4 leading-tight">
               Hey there! 👋 I am{" "}
@@ -117,15 +113,6 @@ export default function PortfolioSection() {
               source={code}
               style={{ whiteSpace: "pre-wrap" }}
             />
-          </div>
-        </div>
-
-        <div className="mt-14">
-          <h2 className="text-3xl font-semibold text-center text-gray-800 ">
-            My Skills
-          </h2>
-          <div className="relative  mt-5 py-3">
-            <HorizontalMarqueeDemo />
           </div>
         </div>
       </div>

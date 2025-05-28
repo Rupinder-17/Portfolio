@@ -70,10 +70,15 @@ export const Project = () => {
   ];
 
   return (
-    <div className="bg-gray-100 text-white py-16 px-6" id="projects">
+    <div
+      className="bg-gray-100 dark:bg-gray-700 text-white  py-16 px-6"
+      id="projects"
+    >
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-gray-500">Projects</h1>
-        <p className="text-gray-400 text-lg">
+        <h1 className="text-4xl font-bold mb-4 text-gray-500 dark:text-white">
+          Projects
+        </h1>
+        <p className="text-gray-400 text-lg  dark:text-white">
           Some of the noteworthy projects I have built!
         </p>
       </div>

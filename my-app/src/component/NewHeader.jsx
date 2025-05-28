@@ -25,9 +25,18 @@ export const NewHeader = () => {
 
   return (
     <div className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-16 max-w-7xl mx-auto items-center px-4 sm:px-8 lg:px-16">
         <NavigationMenu>
           <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                href="#home"
+                onClick={handleNavClick}
+              >
+                Home
+              </NavigationMenuLink>
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
@@ -44,6 +53,15 @@ export const NewHeader = () => {
                 onClick={handleNavClick}
               >
                 Projects
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                href="#skills"
+                onClick={handleNavClick}
+              >
+                Skills
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>

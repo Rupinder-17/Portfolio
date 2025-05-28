@@ -25,10 +25,13 @@ const rupinderKaurDetails = [
 
 export default function PortfolioSection() {
   return (
-    <section className="relative bg-gray-50 py-20 px-6 sm:px-12 lg:px-24">
+    <section
+      className="relative bg-gray-50 py-12 px-4 sm:px-8 lg:px-16"
+      id="home"
+    >
       <Header />
 
-      <div className="absolute  ">
+      <div className="absolute">
         <FlickeringGrid
           className="size-full"
           squareSize={4}
@@ -40,7 +43,7 @@ export default function PortfolioSection() {
           width={1500}
         />
       </div>
-      <div className="relative ">
+      <div className="relative mt-8">
         <div className="max-w-7xl mt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-4xl font-extrabold text-gray-800 sm:text-5xl mb-4 leading-tight">

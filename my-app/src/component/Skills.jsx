@@ -72,7 +72,10 @@ const ReviewCard = ({ skill, description, logo }) => {
 
 export function HorizontalMarqueeDemo() {
   return (
-    <div className="relative w-[100%] flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6">
+    <div
+      className="relative w-[100%] flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6"
+      id="skills"
+    >
       {/* First Horizontal Marquee */}
       <Marquee
         pauseOnHover

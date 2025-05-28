@@ -22,7 +22,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className=" py-16 px-6 ">
+    <div className=" py-16 px-6 " id="contact">
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

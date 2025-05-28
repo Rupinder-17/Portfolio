@@ -24,7 +24,7 @@ const rupinderKaurDetails = [
 export default function PortfolioSection() {
   return (
     <section className="relative bg-gray-50 pb-12" id="home">
-      <div className="relative pt-8">
+      <div className="relative pt-7">
         <div className="absolute">
           <FlickeringGrid
             className="size-full"
@@ -34,7 +34,7 @@ export default function PortfolioSection() {
             maxOpacity={0.3}
             flickerChance={0.1}
             height={580}
-            width={1500}
+            width={1700}
           />
         </div>
         <div className="max-w-7xl pt-7 mx-auto grid lg:grid-cols-2 gap-16 items-center">

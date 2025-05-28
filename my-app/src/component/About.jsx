@@ -15,7 +15,7 @@ const rupinderKaurDetails = [
 
 export const About = () => {
   return (
-    <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8" id="about">
+    <div className=" py-16 px-4 sm:px-6 lg:px-8" id="about">
       <div className="bg-gray-200 rounded-2xl w-36 px-4 py-2 mx-auto mb-10">
         <h3 className="text-2xl font-semibold text-center text-gray-800">
           About

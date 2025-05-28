@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {
   DownloadIcon,
   GithubIcon,
@@ -7,11 +7,8 @@ import {
   MapPinIcon,
   CalendarIcon,
 } from "lucide-react";
-import { Header } from "./Header";
 import MDEditor from "@uiw/react-md-editor";
-import { HorizontalMarqueeDemo } from "./Skills";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
-import { NewHeader } from "./NewHeader";
 
 const code = `\`\`\`js
 const rupinderKaurDetails = [

@@ -6,12 +6,14 @@ import { ContextHookProvider } from "./Hooks/ContextHook";
 import { Project } from "./component/Project";
 import { ContactPage } from "./component/Contect";
 import { NewHeader } from "./component/NewHeader";
+import { About } from "./component/About";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ContextHookProvider>
       <NewHeader/>
       <PortfolioSection />
+      <About/>
       <Project/>
       <ContactPage/>
     </ContextHookProvider>

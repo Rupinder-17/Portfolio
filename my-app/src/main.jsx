@@ -7,6 +7,7 @@ import { Project } from "./component/Project";
 import { ContactPage } from "./component/Contect";
 import { NewHeader } from "./component/NewHeader";
 import { About } from "./component/About";
+import { Skills } from "./component/Skills";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       <NewHeader/>
       <PortfolioSection />
       <About/>
+      <Skills/>
       <Project/>
       <ContactPage/>
     </ContextHookProvider>

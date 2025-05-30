@@ -70,7 +70,7 @@ const ReviewCard = ({ skill, description, logo }) => {
   );
 };
 
-export function HorizontalMarqueeDemo() {
+export function Skills() {
   return (
     <div
       className="relative w-[100%] flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-gray-50 dark:bg-gray-900 shadow-xl p-6"

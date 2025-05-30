@@ -112,8 +112,8 @@ export default function PortfolioSection() {
         <div className="relative w-full h-auto  dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-6">
           <MDEditor.Markdown
             source={code}
-            style={{  whiteSpace: "pre-wrap", background: "transparent" }}
-            className="text-gray-800 dark:text-gray-800"
+            // style={{  whiteSpace: "pre-wrap", background: "transparent" }}
+            className="text-gray-800 dark:text-gray-800 bg-white dark:bg-black"
           />
         </div>
       </div>

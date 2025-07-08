@@ -4,6 +4,7 @@ import "./index.css";
 // import PortfolioSection from "./component/HomePage";
 import { ContextHookProvider } from "./Hooks/ContextHook";
 import { Products } from "./component/DtaFilter";
+import { Admin } from "./component/Ccccsss";
 // import { Project } from "./component/Project";
 // import { ContactPage } from "./component/Contect";
 // import { NewHeader } from "./component/NewHeader";
@@ -21,7 +22,8 @@ createRoot(document.getElementById("root")).render(
       <Project/>
       <ContactPage/> */}
       {/* <DemoCounter/> */}
-      <Products/>
+      {/* <Products/> */}
+      <Admin/>
     </ContextHookProvider>
   </StrictMode>
 );

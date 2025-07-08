@@ -6,6 +6,7 @@ import { ContextHookProvider } from "./Hooks/ContextHook";
 // import { Products } from "./component/DtaFilter";
 // import { Admin } from "./component/Ccccsss";
 import { VedioPlay } from "./YouTube/VedioPlay";
+import { VedioPlay2 } from "./YouTube/VVV";
 // import { Project } from "./component/Project";
 // import { ContactPage } from "./component/Contect";
 // import { NewHeader } from "./component/NewHeader";
@@ -25,7 +26,8 @@ createRoot(document.getElementById("root")).render(
       {/* <DemoCounter/> */}
       {/* <Products/> */}
       {/* <Admin/> */}
-      <VedioPlay/>
+      {/* <VedioPlay/> */}
+      <VedioPlay2/>
     </ContextHookProvider>
   </StrictMode>
 );

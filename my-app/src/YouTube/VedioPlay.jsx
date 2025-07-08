@@ -1,61 +1,57 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useApi } from "./Hooks/useApi";
-import { useState } from "react";
 
 export const VedioPlay = () => {
-  const { vedioData, playVedio } = useApi([]);
-  console.log("ved", vedioData);
-  const [vedioId, setVedioId]= useState(null)
-  console.log(vedioId);
-  
+  const { vedioData, playVedio } = useApi();
+  const [vedioId, setVedioId] = useState(null);
 
   useEffect(() => {
     playVedio();
   }, []);
-  const handlePlay = (id)=>{
-    setVedioId(id)
-  }
+
+  const handlePlay = (id) => {
+    setVedioId(id);
+  };
 
   return (
-    <div className="p-4 flex gap-8 bg-slate-500 ">
-      <div className="bg-red-300 w-[50%]">
+    <div className="p-6  min-h-screen text-white flex flex-col lg:flex-row gap-8">
+      <div className="lg:w-2/3 w-full rounded-2xl p-4 shadow-lg">
         {vedioId && (
           <iframe
             width="100%"
-            height="200"
+            height="700"
             src={`https://www.youtube.com/embed/${vedioId}`}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="rounded-t-2xl "
+            className="rounded-xl"
           ></iframe>
+        
         )}
       </div>
 
-      <div className=" w-[40%]">
+      <div className="lg:w-1/3 w-full overflow-y-auto space-y-6 max-h-[90vh] rounded-md">
         {vedioData?.map((item, index) => {
-          const vedioData = item.items;
+          const video = item.items;
           return (
             <div
               key={index}
-              className=" rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+              onClick={() => handlePlay(video.id)}
+              className="cursor-pointer bg-white text-gray-800 rounded-xl shadow-md hover:shadow-xl  transition-all duration-300"
+              onMouseEnter={() => handlePlay(video.id)}
             >
               <img
-                src={vedioData.snippet?.thumbnails?.high?.url}
-                alt={item.snippet?.title}
-                className=" object-contain"
-                onClick={() => handlePlay(vedioData.id)}
+                src={video.snippet?.thumbnails?.high?.url}
+                alt={video.snippet?.title}
+                className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-300" // Zoom effect
               />
-              <div className="p-4">
-                <h2 className="text-lg font-semibold mb-2 text-gray-800">
-                  {vedioData.snippet?.channelTitle}
-                </h2>
-                <p className="text-sm text-gray-600 mb-1">
-                  {/* {item.items.snippet?.description} */}
+              <div className="p-3">
+                <h3 className="text-md font-semibold truncate">
+                  {video.snippet?.title}
+                </h3>
+                <p className="text-sm text-gray-600 truncate">
+                  {video.snippet?.channelTitle}
                 </p>
-                <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">
-                  {item.kind}
-                </span>
               </div>
             </div>
           );

@@ -26,7 +26,6 @@ export const VedioPlay = () => {
             allowFullScreen
             className="rounded-xl"
           ></iframe>
-        
         )}
       </div>
 
@@ -43,7 +42,7 @@ export const VedioPlay = () => {
               <img
                 src={video.snippet?.thumbnails?.high?.url}
                 alt={video.snippet?.title}
-                className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-300" // Zoom effect
+                className="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-300" 
               />
               <div className="p-3">
                 <h3 className="text-md font-semibold truncate">

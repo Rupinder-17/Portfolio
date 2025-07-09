@@ -26,8 +26,8 @@ createRoot(document.getElementById("root")).render(
       {/* <DemoCounter/> */}
       {/* <Products/> */}
       {/* <Admin/> */}
-      {/* <VedioPlay/> */}
-      <VedioPlay2/>
+      <VedioPlay/>
+      {/* <VedioPlay2/> */}
     </ContextHookProvider>
   </StrictMode>
 );
